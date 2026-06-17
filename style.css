@@ -232,6 +232,23 @@ section {
   border-style: dashed;
 }
 
+.project-bullets {
+  margin: 0.75rem 0 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-bullets li {
+  font-size: 14px;
+  color: #9a9aa8;
+  line-height: 1.6;
+}
+
+.project-tools {
+  margin-top: 1rem;
+}
+
 .contact-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
