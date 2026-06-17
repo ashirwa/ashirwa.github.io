@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Shirwa</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
   <nav>
-    <a href="index.html" class="nav-logo">Adam Shirwa</a>
+    <a href="index.html" class="nav-logo">Adam <span>Shirwa</span></a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="projects.html">Projects</a>
@@ -18,36 +19,86 @@
 
   <main>
     <section class="hero">
-      <p class="hero-label">Portfolio</p>
-      <h1>Hi, I'm <span>Adam Shirwa</span></h1>
-      <p class="hero-sub">Honours Science graduate from the University of Waterloo with a Computing Minor and a certification in Genomic Data Science from Johns Hopkins. Applying computational methods to genomic and protein data analysis.</p>
-      <div class="hero-btns">
-        <a href="projects.html" class="btn-primary">View projects</a>
-        <a href="contact.html" class="btn-outline">Get in touch</a>
+      <div class="hero-content">
+        <p class="hero-label">Portfolio</p>
+        <h1>Hi, I'm <span class="name">Adam Shirwa</span></h1>
+        <p class="hero-role"><span id="typed"></span><span class="cursor"></span></p>
+        <p class="hero-sub">Honours Science graduate from the University of Waterloo with a Computing Minor and a Genomic Data Science certification from Johns Hopkins. Applying computational methods to genomic and protein data analysis.</p>
+        <div class="hero-btns">
+          <a href="projects.html" class="btn-primary">View projects</a>
+          <a href="contact.html" class="btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <img src="profile.jpg" alt="Adam Shirwa" class="hero-photo" onerror="this.outerHTML='<div class=\'hero-photo-placeholder\'>AS</div>'">
+    </section>
+
+    <hr class="divider">
+
+    <section class="about fade-in">
+      <p class="section-label">About me</p>
+      <h2 class="section-title">Background</h2>
+      <div class="about-text">
+        <p>I'm a recent Honours Science graduate from the University of Waterloo with a minor in Computing and a certification in Genomic Data Science from Johns Hopkins University.</p>
+        <p>I'm experienced in Python, R, Bash, and bioinformatics tools including BLAST, FastQC, and Prokka. My interests lie in bioinformatics, metagenomics, and computational biology — applying computational methods to make sense of genomic and protein data.</p>
+        <p>Outside of work I follow Formula 1, build PCs, play ice hockey, and volunteer as a Big Brothers Big Sisters mentor.</p>
+        <div class="badges">
+          <span class="badge">University of Waterloo</span>
+          <span class="badge">Honours Science</span>
+          <span class="badge">Computing Minor</span>
+          <span class="badge">Johns Hopkins — Genomic Data Science</span>
+        </div>
       </div>
     </section>
 
     <hr class="divider">
 
-    <section class="about">
-      <p class="section-label">About me</p>
-      <h2 class="section-title">Background</h2>
-      <div class="about-grid">
-        <div class="avatar">AS</div>
-        <div class="about-text">
-          <p>I'm a recent Honours Science graduate from the University of Waterloo with a minor in Computing and a certification in Genomic Data Science from Johns Hopkins University.</p>
-          <p>I'm experienced in Python, R, Bash, and bioinformatics tools including BLAST, FastQC, and Prokka. My interests lie in bioinformatics, metagenomics, and computational biology — applying computational methods to make sense of genomic and protein data.</p>
-          <p>Outside of work I follow Formula 1, build PCs, play ice hockey, and volunteer as a Big Brothers Big Sisters mentor.</p>
-          <div class="badges">
-            <span class="badge">University of Waterloo</span>
-            <span class="badge">Honours Science</span>
-            <span class="badge">Computing Minor</span>
-            <span class="badge">Johns Hopkins — Genomic Data Science</span>
-            <span class="badge">Python</span>
-            <span class="badge">R</span>
-            <span class="badge">Bash</span>
-            <span class="badge">Bioinformatics</span>
-          </div>
+    <section class="fade-in">
+      <p class="section-label">Capabilities</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-dot purple"></span><span class="skill-name">Python</span></div>
+        <div class="skill-card"><span class="skill-dot purple"></span><span class="skill-name">R</span></div>
+        <div class="skill-card"><span class="skill-dot purple"></span><span class="skill-name">Bash</span></div>
+        <div class="skill-card"><span class="skill-dot purple"></span><span class="skill-name">SQL</span></div>
+        <div class="skill-card"><span class="skill-dot purple"></span><span class="skill-name">Java</span></div>
+        <div class="skill-card"><span class="skill-dot teal"></span><span class="skill-name">BLAST</span></div>
+        <div class="skill-card"><span class="skill-dot teal"></span><span class="skill-name">FastQC</span></div>
+        <div class="skill-card"><span class="skill-dot teal"></span><span class="skill-name">Prokka</span></div>
+        <div class="skill-card"><span class="skill-dot teal"></span><span class="skill-name">COBALT</span></div>
+        <div class="skill-card"><span class="skill-dot teal"></span><span class="skill-name">Jalview</span></div>
+        <div class="skill-card"><span class="skill-dot teal"></span><span class="skill-name">Nextflow</span></div>
+        <div class="skill-card"><span class="skill-dot blue"></span><span class="skill-name">VS Code</span></div>
+        <div class="skill-card"><span class="skill-dot blue"></span><span class="skill-name">SPSS</span></div>
+        <div class="skill-card"><span class="skill-dot amber"></span><span class="skill-name">HTML / CSS</span></div>
+        <div class="skill-card"><span class="skill-dot amber"></span><span class="skill-name">Git</span></div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="fade-in">
+      <p class="section-label">Journey</p>
+      <h2 class="section-title">Education & certifications</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">Sep 2021</p>
+          <p class="timeline-title">Bachelor of Science — Honours Science</p>
+          <p class="timeline-sub">University of Waterloo, Waterloo, Ontario</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Jan 2023</p>
+          <p class="timeline-title">Minor in Computing</p>
+          <p class="timeline-sub">University of Waterloo</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">March 2025</p>
+          <p class="timeline-title">Python in Genomic Data Science — Certification</p>
+          <p class="timeline-sub">Johns Hopkins University</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Dec 2025</p>
+          <p class="timeline-title">Graduation</p>
+          <p class="timeline-sub">University of Waterloo · Merit Scholarship · Term Distinction</p>
         </div>
       </div>
     </section>
@@ -56,5 +107,29 @@
   <footer>
     <p>© 2026 Adam Shirwa</p>
   </footer>
+
+  <script>
+    const roles = ['Bioinformatics Researcher', 'Computational Biologist', 'Python Developer', 'Genomics Enthusiast'];
+    let roleIndex = 0, charIndex = 0, deleting = false;
+    const el = document.getElementById('typed');
+
+    function type() {
+      const word = roles[roleIndex];
+      if (!deleting) {
+        el.textContent = word.slice(0, ++charIndex);
+        if (charIndex === word.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        el.textContent = word.slice(0, --charIndex);
+        if (charIndex === 0) { deleting = false; roleIndex = (roleIndex + 1) % roles.length; }
+      }
+      setTimeout(type, deleting ? 45 : 80);
+    }
+    type();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

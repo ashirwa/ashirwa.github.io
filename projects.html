@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Adam Shirwa</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
   <nav>
-    <a href="index.html" class="nav-logo">Adam Shirwa</a>
+    <a href="index.html" class="nav-logo">Adam <span>Shirwa</span></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="projects.html" class="active">Projects</a>
@@ -21,7 +22,7 @@
       <p class="section-label">Work</p>
       <h1 class="section-title" style="font-size:32px;">Projects</h1>
 
-      <div class="project-card">
+      <div class="project-card fade-in">
         <div class="project-header">
           <span class="project-name">Evolutionary Conservation of BRCA1 Across Primate Species</span>
           <span class="project-tag">Bioinformatics</span>
@@ -47,7 +48,7 @@
         </a>
       </div>
 
-      <div class="project-card">
+      <div class="project-card fade-in">
         <div class="project-header">
           <span class="project-name">LRU Cache Implementation in Python</span>
           <span class="project-tag">Software</span>
@@ -59,9 +60,9 @@
         </div>
       </div>
 
-      <div class="project-card project-placeholder">
+      <div class="project-card project-placeholder fade-in">
         <div class="project-header">
-          <span class="project-name" style="color:#7c7c8e;">More projects coming soon</span>
+          <span class="project-name" style="color:var(--text-muted);">More projects coming soon</span>
         </div>
         <p class="project-desc">Additional projects will be added here.</p>
       </div>
@@ -71,5 +72,12 @@
   <footer>
     <p>© 2026 Adam Shirwa</p>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
